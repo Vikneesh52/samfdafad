@@ -22,18 +22,17 @@ For each patient, create a table using this exact format:
 
 ### 2. Physician/Facility Summary
 Write in paragraph format:
-- **Primary Physician:** [Extract name and credentials]
-- **Facility:** [Extract healthcare facility name and location]
+- **Primary Physician:** [Extract name and credentials] (p. X)
+- **Facility:** [Extract healthcare facility name and location] (p. X)
 - **Specialty:** [Extract medical specialty if applicable]
-- **Additional Details:** [Extract any relevant information about the healthcare provider]
+- **Additional Details:** [Extract any relevant information about the healthcare provider, including experience, department, or special qualifications]
 
 ### 3. Incident Summary
-Create this exact table format (arrange dates from latest to oldest):
+Write in narrative format, organizing from most recent to oldest incidents:
 
-| Incident Date | Description | Severity | Complications | Page Reference |
-|---------------|-------------|----------|---------------|----------------|
-| "[Extract most recent date]" | [Extract comprehensive description] | [Extract severity level] | [Extract complications if any] | (p. X) |
-| "[Extract next date]" | [Extract description] | [Extract severity level] | [Extract complications if any] | (p. X) |
+**Most Recent Incident - "[Extract latest date]":** [Provide comprehensive description of the most recent injury or incident, including location, circumstances, and immediate impact] (p. X). Severity assessed as [mild/moderate/severe] with [describe any complications or related conditions that arose].
+
+**Previous Incidents:** [If multiple incidents exist, describe each in chronological order from newest to oldest, following the same format as above]
 
 ### 4. Primary Diagnosis
 Create this exact table format:
@@ -41,27 +40,25 @@ Create this exact table format:
 | Component | Details |
 |-----------|---------|
 | **Diagnosis Date** | "[Extract date]" |
-| **Primary Condition(s)** | [Extract main medical condition(s) with codes if available] |
+| **Primary Condition(s)** | [Extract main medical condition(s) with ICD codes if available] |
 | **Secondary Conditions** | [Extract additional diagnoses] |
 | **Diagnostic Procedures** | [Extract tests performed: lab work, imaging, etc.] |
 | **Supporting Evidence** | [Extract test results and findings] |
 
 ### 5. Prognosis
-Write in paragraph format:
-- **Expected Outcomes:** [Extract detailed prognosis based on current condition]
-- **Influencing Factors:** [Extract age, lifestyle, medical history, compliance factors]
-- **Timeline:** [Extract expected recovery timeline if applicable]
+Write in detailed paragraph format:
+**Expected Outcomes:** [Extract and elaborate on the detailed prognosis based on current condition, including recovery expectations and timeline] (p. X). **Influencing Factors:** [Describe how age, lifestyle, medical history, treatment compliance, and other factors may impact recovery]. **Timeline Considerations:** [Provide specific timeframes for expected milestones, if available].
 
 ### 6. Treatment and Therapies
-Create this exact table format (arrange dates from latest to oldest):
+Write in narrative format, organizing treatments from most recent to oldest:
 
-| Treatment Type | Details | Start Date | End Date | Frequency | Page Reference |
-|----------------|---------|------------|----------|-----------|----------------|
-| **Medications** | [Extract drug names, dosages, route] | "[Latest start date]" | "[End date or Ongoing]" | [Extract frequency] | (p. X) |
-| **Surgical Procedures** | [Extract procedure names and details] | "[Latest procedure date]" | "[Completion date]" | [N/A or frequency] | (p. X) |
-| **Physical Therapy** | [Extract specific therapies and goals] | "[Latest start date]" | "[End date or Ongoing]" | [Extract sessions per week] | (p. X) |
-| **Occupational Therapy** | [Extract activities and objectives] | "[Latest start date]" | "[End date or Ongoing]" | [Extract sessions per week] | (p. X) |
-| **Other Therapies** | [Extract psychological, speech, etc.] | "[Latest start date]" | "[End date or Ongoing]" | [Extract frequency] | (p. X) |
+**Current/Recent Treatments:** [Describe ongoing and most recent treatments, including medications with dosages, current therapy sessions, and any recent procedures] (p. X).
+
+**Medications:** [List current medications with "[drug name]", "[dosage]", "[frequency]", started on "[date]"]
+
+**Therapies:** [Detail physical therapy, occupational therapy, psychological counseling, etc., with frequency and goals]
+
+**Procedures:** [Describe any surgical or medical procedures performed, with dates from most recent to oldest]
 
 ### 7. Financial Records and Total Costs
 For each Patient ID, create separate tables using this exact format:
@@ -79,47 +76,37 @@ For each Patient ID, create separate tables using this exact format:
 | **Outstanding Balance** | "$[Calculate remaining balance]" |
 
 ### 8. Visit Summary
-Create this exact table format (arrange dates from latest to oldest):
+Write in paragraph format with summary table:
 
-| Patient ID | Visit Date | Visit Type | Purpose | Total Visits to Date | Page Reference |
-|------------|------------|------------|---------|---------------------|----------------|
-| "[Extract Patient ID]" | "[Latest visit date]" | [Extract visit type] | [Extract purpose] | "[Count cumulative visits]" | (p. X) |
-| "[Extract Patient ID]" | "[Previous visit date]" | [Extract visit type] | [Extract purpose] | "[Count cumulative visits]" | (p. X) |
+**Visit History:** [Describe the pattern and frequency of visits, noting any significant appointments or consultations] (p. X). The patient has maintained [regular/irregular] follow-up appointments with [frequency description].
 
-**Visit Frequency Summary:**
-| Patient ID | Total Visits | Visit Frequency Pattern | Date Range |
-|------------|--------------|------------------------|------------|
+**Visit Summary Table:**
+| Patient ID | Total Visits | Visit Frequency | Date Range |
+|------------|--------------|-----------------|------------|
 | "[Extract Patient ID]" | "[Count total visits]" visits | [Determine frequency pattern] | "[Extract start date]" to "[Extract end date]" |
 
 ### 9. Treatment Goals
-Create this exact table format:
+Write in structured paragraph format:
 
-| Goal Type | Objectives | Target Timeline | Status |
-|-----------|------------|-----------------|--------|
-| **Short-term Goals** | [Extract immediate objectives] | [Extract timeline] | [Determine status: Achieved/In Progress/Not Met] |
-| **Long-term Goals** | [Extract ultimate objectives] | [Extract timeline] | [Determine status: Projected/In Progress] |
+**Short-term Goals (0-6 months):** [Extract and describe immediate objectives such as pain management, mobility improvement, symptom reduction] (p. X). Current status: [Achieved/In Progress/Not Met with explanation].
+
+**Long-term Goals (6+ months):** [Extract and describe ultimate objectives such as full recovery, return to work, independent living] (p. X). Projected timeline: [Extract expected timeline and factors affecting achievement].
 
 ### 10. Patient Outcome Progression
-Create this exact table format (arrange dates from latest to oldest):
+Write in chronological narrative format (most recent first):
 
-| Date | Condition Status | Changes Observed | Milestones Reached | Page Reference |
-|------|------------------|------------------|-------------------|----------------|
-| "[Latest assessment date]" | [Extract current condition] | [Extract recent changes] | [Extract recent milestones] | (p. X) |
-| "[Previous assessment date]" | [Extract condition status] | [Extract changes] | [Extract milestones] | (p. X) |
+**Current Status "[Latest assessment date]":** [Describe present condition, current functional level, and recent changes observed] (p. X).
 
-**Key Milestones Summary:**
-- **[Latest milestone date]:** [Extract significant achievement]
-- **[Previous milestone date]:** [Extract significant achievement]
+**Progress Timeline:** [Describe the patient's journey from initial treatment to current status, highlighting key improvements, setbacks, or plateaus in reverse chronological order. Include specific dates and measurable outcomes where available].
+
+**Key Milestones Achieved:**
+- **"[Most recent milestone date]":** [Describe significant achievement]
+- **"[Previous milestone date]":** [Describe significant achievement]
 
 ### 11. Notable Outcomes
-Create this exact table format:
+Write in comprehensive paragraph format:
 
-| Outcome Category | Details |
-|------------------|---------|
-| **Significant Achievements** | [Extract regained mobility, reduced symptoms, improvements] |
-| **Remaining Challenges** | [Extract ongoing issues, unmet goals, barriers] |
-| **Patient Satisfaction** | [Extract patient/caregiver feedback] |
-| **Quality of Life Impact** | [Extract impact on daily living] |
+**Significant Achievements:** [Describe major improvements such as regained mobility, reduced symptoms, functional improvements, return to activities] (p. X). **Remaining Challenges:** [Detail ongoing issues, unmet goals, barriers to progress, and any complications that persist]. **Patient Feedback:** [Include patient and caregiver perspectives on treatment effectiveness and satisfaction with care]. **Quality of Life Impact:** [Assess how treatment has affected the patient's daily living, work capacity, and overall well-being].
 
 ---
 
@@ -128,8 +115,9 @@ FORMATTING REQUIREMENTS:
 - ALL monetary values MUST be enclosed in quotes with currency symbols
 - ALL dates MUST be in MM/DD/YYYY format and enclosed in quotes
 - ALL Patient IDs MUST be enclosed in quotes
-- ALL tables with dates MUST be arranged from latest to oldest (most recent first)
-- Use the EXACT table structures provided above
+- When dates are involved, arrange information from latest to oldest (most recent first)
+- Tables should ONLY be used for: Patient Details, Primary Diagnosis, Financial Records, and Visit Summary
+- All other sections should use detailed paragraph/narrative format
 - Maintain consistent formatting throughout
 - Include page citations (p. X) for all extracted information
 - If information is not available, indicate as "Not specified" or "N/A"
